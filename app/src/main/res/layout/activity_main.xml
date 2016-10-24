@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/colorSwatch"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:height="200dp"
+        android:background="#000"
+        android:layout_height="175dp"/>
+
+    <TextView
+        android:text="@string/val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/val"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/satSB"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/sat"
+        android:id="@+id/sat"
+        android:labelFor="@+id/satSB"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/hueSB"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/hue"
+        android:id="@+id/hue"
+        android:labelFor="@+id/hueSB"
+        android:layout_below="@+id/colorSwatch"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/satSB"
+        android:max="100"
+        android:layout_below="@+id/sat"
+        android:background="@drawable/satgrad"
+        android:layout_alignParentStart="true"/>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/hueSB"
+        android:max="360"
+        android:layout_below="@+id/hue"
+        android:background="@drawable/huegrad"
+        android:layout_alignParentStart="true"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/buttonContainer"
+        android:fillViewport="true"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/valSB"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:id="@+id/buttonCAN"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/redB"
+                android:background="#FF0000"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/blackB"
+                android:background="#000"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/limeB"
+                android:background="#00FF00"/>
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/blueB"
+                android:background="#0000FF"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/yellowB"
+                android:background="#FFFF00"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/cyanB"
+                android:background="#00FFFF"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/magentaB"
+                android:background="#FF00FF"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/silverB"
+                android:background="#C0C0C0"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/grayB"
+                android:background="#808080"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/maroonB"
+                android:background="#800000"/>
+
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/oliveB"
+                android:background="#808000"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/greenB"
+                android:background="#008000"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/purpleB"
+                android:background="#800080"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/tealB"
+                android:background="#008080"/>
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/navyB"
+                android:background="#000080"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/valSB"
+        android:max="100"
+        android:layout_below="@+id/val"
+        android:background="@drawable/valgrad"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>
